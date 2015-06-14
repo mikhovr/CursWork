@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 import re
  
-conn = sqlite3.connect('D:/cw/tweets_april.db')
+conn = sqlite3.connect('tweets_april.db')
 c = conn.cursor()
 tw = pd.read_sql("SELECT content from tweets", conn)
 #http://shahmirj.com/blog/extracting-twitter-usertags-using-regex
